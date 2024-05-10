@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News24/7</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1><span style="color: green; font-size: 150%;">News</span><span style="color: red; font-size: 150%;">24/7</span></h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="  Search anything..." style="height: 30px; width: 250px; border-radius: 20px; background-color: lightgreen;">
+        <pre> </pre>   
+        <button onclick="searchNews()" style="height: 30px; width: 80px; border-radius: 20px; background-color:#FF5B61;" >Search</button>
+    </div>
+    
+    <p id="demo"></p>
+    <script>
+      document.getElementById('demo').innerHTML = Date();
+    </script>
+
+
+  </header>
+
+  <div id="newsContainer" class="container"></div>
+
+  <script src="script.js">
+
+  </script>
+ </body>
+ </html>
